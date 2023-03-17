@@ -1622,15 +1622,15 @@ class SnowPlayer implements Player, PlaylistEditor {
 
     @Override
     public void skipToNext() {
-        if (mLoadingPlaylist) {
-            mPlaylistLoadedAction = new Runnable() {
-                @Override
-                public void run() {
-                    skipToNext();
-                }
-            };
-            return;
-        }
+//        if (mLoadingPlaylist) {
+//            mPlaylistLoadedAction = new Runnable() {
+//                @Override
+//                public void run() {
+//                    skipToNext();
+//                }
+//            };
+//            return;
+//        }
 
         if (getPlaylistSize() < 1) {
             return;
